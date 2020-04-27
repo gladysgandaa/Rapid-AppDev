@@ -28,7 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'zz
 gem 'rails-controller-testing'
-gem 'jquery-rails','4.3.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
 
 gem 'bcrypt',         '3.1.12'
 # Use ActiveStorage variant
@@ -41,7 +42,8 @@ gem 'bcrypt',         '3.1.12'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console\
+  gem'sqlite3','1.3.13'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -61,6 +63,7 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
