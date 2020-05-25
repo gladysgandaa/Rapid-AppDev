@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email
 
       t.timestamps
+      # t.timestamps calls t.updated_at and t.created_at
     end
   end
 end
