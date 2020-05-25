@@ -15,7 +15,11 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+<<<<<<< HEAD
 gem 'bootstrap-sass', '3.3.7'
+=======
+
+>>>>>>> account-activation
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -25,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 # gem 'bcrypt', '~> 3.1.7'zz
 gem 'bcrypt',                   '3.1.12'
 gem 'faker',                    '1.7.3'
@@ -33,6 +38,9 @@ gem 'bootstrap-will_paginate',  '1.0.0'
 gem 'rails-controller-testing'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> account-activation
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -44,9 +52,9 @@ gem 'rails-ujs', '~> 0.1.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console\
-  gem'sqlite3','1.3.13'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry'
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -65,6 +73,20 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Add bootstrap
+gem 'bootstrap-sass', '3.3.7'
+
+gem 'jquery-rails'
+
+gem 'rails-controller-testing'
+
+gem 'bcrypt', '3.1.12'
+
+gem 'faker', '1.7.3'
+
+gem 'will_paginate', '3.1.7'
+
+gem 'bootstrap-will_paginate', '1.0.0'
